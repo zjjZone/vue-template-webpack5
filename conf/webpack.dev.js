@@ -23,7 +23,11 @@ module.exports = merge(baseConfig, {
       {
         //设置css的解析规则 解析sfc里面的style
         test: /\.css$/,
-        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          { loader: 'postcss-loader' }
+        ]
       }
     ]
   }

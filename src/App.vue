@@ -1,5 +1,5 @@
 <template>
-  <div class="zzz">hello vue</div>
+  <div class="zzz font-bold text-3xl">hello vue</div>
 </template>
 
 <script>

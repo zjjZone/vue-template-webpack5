@@ -13,13 +13,13 @@ module.exports = merge(baseConfig, {
     rules: [
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
       }
     ]
   },
   plugins: [
     // 代替style-loader，单独抽离css
-    new MiniCssExtractPlugin({ 
+    new MiniCssExtractPlugin({
       filename: 'static/css/[name].[contenthash:4].css'
     })
   ]
